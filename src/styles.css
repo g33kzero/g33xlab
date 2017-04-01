@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+/* @import '~@angular/material/core/theming/prebuilt/indigo-pink.css'; */
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+@import '~ng2-slim-loading-bar/bundles/style.css';
+
+body {
+  margin: 0;
+}
+
+
+.auth0-lock-badge-bottom {
+  display: none;
+}
+
+.auth0-lock.auth0-lock .auth0-lock-tabs li.auth0-lock-tabs-current a {
+    font-weight: bold;
+}
+
+.auth0-lock.auth0-lock .auth0-global-message.auth0-global-message-error {
+    background: #ff0000;
+}
+
+.auth0-lock.auth0-lock .auth0-global-message {
+
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+}

@@ -1,0 +1,18 @@
+<md-card>
+  <md-card-title>Tâches</md-card-title>
+  <md-card-subtitle>Toutes vos tâches au même endroit.</md-card-subtitle>
+
+  <app-task-form (taskAdded)="taskAddedHandler($event)"></app-task-form>
+
+  <md-list>
+    <div class="task-item" *ngFor="let task of tasks; trackBy: $index">
+      <p><small><strong>{{ task.createdAt | date: 'short' }}</strong></small></p>
+      <p>{{ task.description }}</p>
+
+      <button class="delete" md-button md-raised-button color="accent" (click)="deleteTask(task)">Supprimer</button>
+    </div>
+    <div class="task-item" *ngIf="tasks?.length == 0">
+      <p>Vous n'avez aucune tâche!</p>
+    </div>
+  </md-list>
+</md-card>
