@@ -5,7 +5,7 @@
   <app-task-form (taskAdded)="taskAddedHandler($event)"></app-task-form>
 
   <md-list>
-    <div class="task-item" *ngFor="let task of tasks; trackBy: $index">
+    <div class="task-item" *ngFor="let task of tasks">
       <p><small><strong>{{ task.createdAt | date: 'short' }}</strong></small></p>
       <p>{{ task.description }}</p>
 

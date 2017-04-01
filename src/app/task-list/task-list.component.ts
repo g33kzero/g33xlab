@@ -16,7 +16,7 @@ export class TaskListComponent implements OnInit {
   @Output()
   completeAjaxRequest = new EventEmitter<void>();
 
-  private tasks: String[];
+  tasks: String[];
 
   constructor(private taskListService: TaskListService) {
 

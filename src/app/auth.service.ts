@@ -23,7 +23,7 @@ export class AuthService {
       language: 'fr',
       theme: {
         'primaryColor': '#3f51b5',
-        logo: '/assets/logo.png'
+        logo: 'assets/logo.png'
       }
     }
 

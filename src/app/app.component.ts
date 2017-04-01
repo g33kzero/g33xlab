@@ -9,5 +9,5 @@ import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private authService: AuthService, private slimLoading: SlimLoadingBarService) { }
+  constructor(public authService: AuthService, private slimLoading: SlimLoadingBarService) { }
 }
